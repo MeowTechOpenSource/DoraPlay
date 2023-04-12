@@ -22,8 +22,11 @@
 * 尝试访问'http://serverip:port/danmaku/543' 试是否有效
 
 4.9. 将“tv.json”复制到 unified_data 文件夹。
+
 5. 运行“merge_story_description_episode.py”
+
 6. “ntv.json”复制到应用程序的根目录
+
 6.5. 编辑 static/templates/play.html
      From：http://192.168.0.30:9876/{{year}}/{{epvid|safe}}
 
@@ -32,4 +35,5 @@
      From：http://192.168.0.30:9876/danmaku/{{episode}}.ass
 
      To: http://serverip:port/danmaku/{{episode}}.ass
+   
 7.启动python服务器
