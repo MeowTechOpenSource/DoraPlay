@@ -1,3 +1,5 @@
+## Languages
+[简体中文](readme_zh.md) [English](readme.md)
 # DoraPlay
 A ultimate frontend allowing you to manage and watch your favourite Doraemon episode easily.
 
