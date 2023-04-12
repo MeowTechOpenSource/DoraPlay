@@ -19,7 +19,10 @@
    ![shot07](../images/shot07.png)
 - 在您的视频根目录中运行“get_video.py”。（也将弹幕文件夹放入其中）
 - 将其托管在本地主机上（任何工具或 Windows IIS）
-* 尝试访问'http://serverip:port/danmaku/543' 试是否有效
+   例如 [Simple HTTP Server](https://github.com/TheWaWaR/simple-http-server/releases)
+   * 将“x86_64-pc-windows-msvc-simple-http-server.exe”文件放入视频文件夹。复制端口，在static/templates/play.html文件中，您可以将192.168.0.30:9876编辑为您的ip和端口。 如果在本地观看，192.168.0.30可以是 localhost。
+   * 
+* 尝试访问'http://serverip:port/danmaku/543.ass' 试是否有效 OR 尝试访问'http://localhost:端口/danmaku/543.ass' 试是否有效
 
 4.9. 将“tv.json”复制到 unified_data 文件夹。
 
