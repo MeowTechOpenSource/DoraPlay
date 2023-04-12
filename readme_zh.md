@@ -7,6 +7,7 @@
 
 # 功能
 - 每集下方带有故事來源和描述
+
 ![shot02](images/shot02.png)
 ![shot04](images/shot04.png)
 - 按描述、故事來源、名称和集数搜索。 (*)
