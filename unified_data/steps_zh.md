@@ -20,15 +20,16 @@
 - 在您的视频根目录中运行“get_video.py”。（也将弹幕文件夹放入其中）
 - 将其托管在本地主机上（任何工具或 Windows IIS）
 * 尝试访问'http://serverip:port/danmaku/543' 试是否有效
+
 4.9. 将“tv.json”复制到 unified_data 文件夹。
 5. 运行“merge_story_description_episode.py”
 6. “ntv.json”复制到应用程序的根目录
 6.5. 编辑 static/templates/play.html
-     来自：'http://192.168.0.30:9876/{{year}}/{{epvid|safe}}'
+     From：'http://192.168.0.30:9876/{{year}}/{{epvid|safe}}'
 
-     至：'http://serverip:port/{{year}}/{{epvid|safe}}'
+     To：'http://serverip:port/{{year}}/{{epvid|safe}}'
 
-     来自：'http://192.168.0.30:9876/danmaku/{{episode}}.ass'
+     From：'http://192.168.0.30:9876/danmaku/{{episode}}.ass'
 
      To: 'http://serverip:port/danmaku/{{episode}}.ass'
 7.启动python服务器
