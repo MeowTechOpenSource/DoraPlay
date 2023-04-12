@@ -15,7 +15,7 @@
 - 弹幕支持'喜欢拉面'在bilibili上传的集数.
 ![shot03](images/shot03.png)
 - 按年份排序的界面。
-![shot01](图片/shot01.png)
+![shot01](images/shot01.png)
 
 ### !数据来源：猫吧、chirenedora.com、维基百科、哆啦A梦wiki
 
