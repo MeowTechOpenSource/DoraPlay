@@ -12,7 +12,9 @@
    按年份分类的文件夹 -> 不同字幕组的视频
    例子：
    ![shot06](../images/shot06.png)
+   
    2012/
+   
    ![shot07](../images/shot07.png)
 - 在您的视频根目录中运行“get_video.py”。（也将弹幕文件夹放入其中）
 - 将其托管在本地主机上（任何工具或 Windows IIS）
