@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block body %}
+<p name="ct" id="ct">
+    {% for year in mov %}
+<h3>{{year}}</h3>
+<div class="row">
+    {% for ep in mov[year] %}
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">EP. {{ep["Episode"]}}</h5>
+            <h6 class="card-text">{% for s in ep["storyName"]
+                %}{{s}}({% if ep["isRemake"][ep["storyName"].index(s)] == False %}動畫原創{% else
+                %}{{ep["isRemake"][ep["storyName"].index(s)]}}{% endif %})<br>{% endfor %}</h6>
+            <div class="row"><span class="badge rounded-pill text-bg-secondary col">{{ep["SubFirm"]}}</span><span
+                    class="badge rounded-pill text-bg-success col">{{ep["Type"]}}</span></div>
+            <a href="/play/{{year}}/{{ep['Episode']}}" class="btn btn-primary">Play</a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endfor %}
+<style>
+    .card {
+        margin: 5px;
+        transition: transform .2s;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+    .badge {
+        margin: 5px;
+    }
+</style>
+{% endblock %}

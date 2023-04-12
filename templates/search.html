@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block body %}
+<h2>DoraWatch Search</h2>
+<form class="d-flex ms-auto" action="/search">
+    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" value="{{query}}" name="query">
+    <button class="btn btn-outline-success" type="submit">Search</button>
+</form>
+<br>
+<p class="text-secondary">About {{result[1]|length}} result(s) ({{result[0]}} seconds)</p>
+{% for res in result[1] %}
+<a href="/play/{{res[0]}}/{{res[1]}}">{{res[1]}}. {% for e in res[3] %}{{e}}{% if not loop.last %}&{% endif %}{% endfor %}</a>
+{% for i in res[-2] %}
+<p class="text-secondary">{% if i.startswith("　　") %}{{i.replace("　　","<br>",1).replace("　　","<br><br>")|safe}}{% else %}{{i.replace("　　","<br><br>")|safe}}{% endif %}<br> <em>{% if res[-3][res[-2].index(i)] == False %} {% else %}-- {{res[-3][res[-2].index(i)]}}{% endif %}</em></p>
+{% endfor %}
+{% endfor %}
+<style>
+    .card {
+        margin: 5px;
+        transition: transform .2s;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+    .badge {
+        margin: 5px;
+    }
+</style>
+{% endblock %}
