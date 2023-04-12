@@ -25,7 +25,7 @@ A ultimate frontend allowing you to manage and watch your favourite Doraemon epi
 
 As data source come from (some copyrighted data), we will fetch the information by ourselves.
 
-See 'unified_data/steps.md' for more information
+See [Steps](unified_data/steps.md) for more information
 
 
 * Videos, Description are not provided by default by the repository.
