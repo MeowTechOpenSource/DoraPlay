@@ -28,6 +28,8 @@
 6. “ntv.json”复制到应用程序的根目录
 
 6.5. 编辑 static/templates/play.html
+
+
      From：http://192.168.0.30:9876/{{year}}/{{epvid|safe}}
 
      To：http://serverip:port/{{year}}/{{epvid|safe}}
